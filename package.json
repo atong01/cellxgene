@@ -2,6 +2,6 @@
   "name": "cellxgene",
   "description": "A fun app",
   "scripts": {
-    "postinstall": "npm install --prefix client && npm run build --prefix client && make copy-client-assets"
+    "postinstall": "npm install --prefix client --dev && npm run build --prefix client && make copy-client-assets"
   }
 }
