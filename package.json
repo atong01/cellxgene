@@ -1,9 +1,4 @@
 {
   "name": "cellxgene",
-  "engines": {
-    "node": "12.16.x"
-  },
-  "scripts": {
-    "postinstall": "npm install --prefix client && npm run build --prefix client && make copy-client-assets"
-  }
+  "description": "A fun app"
 }
