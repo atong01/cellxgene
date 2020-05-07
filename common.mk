@@ -7,7 +7,7 @@ SHELL := env PATH='$(PATH)' /bin/bash
 # - If a variable is defined, return its value
 # - Else return the default value from environment.dev
 define get_or_else_dev_env_default
-$(if $($(1)),$($(1)),$(shell VAR=$$(sed -n 's/$(1)=\(.*\)/\1/p' $(PROJECT_ROOT)/environment.default); eval "echo \"$$VAR\""))
+$(if $($(1)),$($(1)),$(shell VAR=$$(sed -n 's/$(1)=\(.*\)/\1/p' environment.default); eval "echo \"$$VAR\""))
 endef
 
 export CXG_SERVER_PORT := $(call get_or_else_dev_env_default,CXG_SERVER_PORT)
