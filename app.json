@@ -21,8 +21,9 @@
   "stack": "heroku-18",
   "env": {
     "NODE_ENV": {
+      "description": "Node env",
       "value": "dev"
-    }
+    },
     "DATASET": {
       "description": "Link to dataset",
       "value": "https://cellxgene-example-data.czi.technology/pbmc3k.h5ad",
