@@ -22,7 +22,8 @@
   "env": {
     "NODE_ENV": {
       "description": "Node env",
-      "value": "dev"
+      "value": "dev",
+      "required": "true"
     },
     "DATASET": {
       "description": "Link to dataset",
